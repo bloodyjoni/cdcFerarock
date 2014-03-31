@@ -37,13 +37,25 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
+        
     }
+    
 };
+$(document).on('pageinit', function (event, ui) {
+    
+      /* $(document ).on( "tap", function(){
+	 $('#optionsL').trigger('click');
+	 /*$.mobile.changePage($("#options"), { transition: "slideup", changeHash: false });
+	 $("body").css({'background:url(img/ScreenAppGrafhitOptions.png);'});*/
+     // } );
+    /* $( document ).on( "swiperight", function(){
+	$('#menuFeraL').trigger('click');
+	 $("body").css({'background:url(img/ScreenAppGrafhitFera.png);'});*/
+      //} );
+      /*$( document).on( "swipeleft", function(){
+	$('#mainL').trigger('click');
+	// $.mobile.changePage( $("#main"), { transition: "slideup", changeHash: false })
+	 $("body").css({'background:url(img/ScreenAppGrafhit.png);'});*/
+     // } );
+      
+    });

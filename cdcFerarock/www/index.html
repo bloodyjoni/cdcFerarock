@@ -13,31 +13,62 @@
     Unless required by applicable law or agreed to in writing,
     software distributed under the License is distributed on an
     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
+    KIND, either express or implied.  See the License for the
     specific language governing permissions and limitations
     under the License.
 -->
 <html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.2.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<title>Hello World</title>
+	<script type="text/javascript" src="phonegap.js"></script>
+	<script type="text/javascript" src="js/jquery191.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+      <div data-role="page" id="grafhit">
+	<div data-role="header" >
+	</div>
+	  <div data-role="content"> 
+		<div class="menuFerarockbtn" >
+		<a href="#menuFera" data-role="button" data-icon="arrow-r" data-iconpos="notext"></a>
+		</div>
+		<div class="customContent">
+		<a id="mainL" href="#grafhit"></a>
+		<a id="optionsL" href="#options"></a>
+		<a id="menuFeraL" href="#menuFera"></a>
+	      </div>
+	    <div class="clear"></div>
+	  </div>
+	  <div data-role="footer" class="pgFooter">
+	  <a href="#options" data-role="button" data-icon="arrow-u" data-iconpos="notext"></a>
+	  </div>
+	</div>
+   
+	<div data-role="page" id="options">
+	  <div data-role="content">
+	
+	</div>
+	</div>
+	<div data-role="page" id="menuFera">
+	  <div data-role="content"> 
+	    <div class="menuFerarock"></div> 
+	    <div class="menuFerarockbtn" >
+		    <a href="#grafhit" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+	    </div>
+	    <div class="customContent">
+	    </div>
+	    <div class="clear"></div>
+	    
+	    </div>
+	</div>
+	
+  </body>
 </html>
